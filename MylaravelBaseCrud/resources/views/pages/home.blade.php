@@ -2,3 +2,12 @@
 @section('content')
     <h1>Hello World</h1>
 @endsection
+<ul>
+    @foreach ($ospiti as $ospite)
+      <li>
+         [{{ $ospite -> id }}]
+         {{ $ospite -> name }}
+         {{ $ospite -> lastname }}
+     </li>
+    @endforeach
+  </ul>
